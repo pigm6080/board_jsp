@@ -18,9 +18,9 @@
 	<h1>수정하기</h1>
 	<form action="edit.jsp" method="post">
 		<input type="hidden" name ="num" value="${vo.num}"/>
-		<input type="text" name="title" placeholder="제목" required/><br>
-		<input type="text" name="writer" placeholder="작성자" required/><br>
-		<textarea rows="4" cols="20" placeholder="내용"></textarea><br>
+		<input type="text" name="title" placeholder="제목" value="${vo.title }" required  /><br>
+		<input type="text" name="writer" placeholder="작성자" value="${vo.writer }" require disabled/><br>
+		<textarea rows="4" cols="20" placeholder="내용" name = "content">${vo.content }</textarea><br>
 		<input type="submit" value="수정" />
 	</form>
 </body>
